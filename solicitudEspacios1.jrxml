@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2020-07-08T12:24:22 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RevisaIncendio" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="505" leftMargin="70" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa6ed341-bbde-4616-9c20-2e112ca9c933">
+	<property name="ireport.zoom" value="1.650000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="672"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#C3CFD9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="c562095e-4421-4e1f-ae2a-a44a547964ad">
+		<field name="field1" class="java.util.List">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="prutaImagen" class="java.lang.String"/>
+	<parameter name="padron" class="java.lang.String"/>
+	<parameter name="pID" class="java.lang.String"/>
+	<parameter name="legajoUsr" class="java.lang.String"/>
+	<parameter name="apellidoUsr" class="java.lang.String"/>
+	<parameter name="nombreUsr" class="java.lang.String"/>
+	<parameter name="pVersion" class="java.lang.String"/>
+	<parameter name="rep_persona" class="java.lang.String"/>
+	<parameter name="rep_dni" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="rep_fechaNacimiento" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="rep_lugarNacimiento" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="rep_edad" class="java.lang.String"/>
+	<parameter name="rep_sexo" class="java.lang.String"/>
+	<parameter name="rep_estadoCivil" class="java.lang.String"/>
+	<parameter name="rep_domiActual" class="java.lang.String"/>
+	<parameter name="rep_telLaboral" class="java.lang.String"/>
+	<parameter name="rep_telPersonal" class="java.lang.String"/>
+	<parameter name="rep_mail" class="java.lang.String"/>
+	<parameter name="rep_contactoUrgencia" class="java.lang.String"/>
+	<parameter name="rep_obraSocial" class="java.lang.String"/>
+	<parameter name="rep_grupoSanguineo" class="java.lang.String"/>
+	<parameter name="rep_peso" class="java.lang.String"/>
+	<parameter name="rep_altura" class="java.lang.String"/>
+	<parameter name="rep_tipoActividad" class="java.lang.String"/>
+	<parameter name="rep_situacion" class="java.lang.String"/>
+	<parameter name="rep_dependencia" class="java.lang.String"/>
+	<parameter name="rep_antiguedad" class="java.lang.String"/>
+	<parameter name="rep_siNo" class="java.lang.String"/>
+	<parameter name="rep_cuando" class="java.lang.String"/>
+	<parameter name="rep_siNo2" class="java.lang.String"/>
+	<parameter name="rep_siNo3" class="java.lang.String"/>
+	<parameter name="rep_siNo4" class="java.lang.String"/>
+	<parameter name="rep_siNo5" class="java.lang.String"/>
+	<parameter name="rep_siNo6" class="java.lang.String"/>
+	<parameter name="rep_siNo7" class="java.lang.String"/>
+	<parameter name="rep_siNo8" class="java.util.List">
+		<parameterDescription><![CDATA[_THIS]]></parameterDescription>
+	</parameter>
+	<parameter name="rep_siNo9" class="java.lang.String"/>
+	<parameter name="rep_siNo10" class="java.lang.String"/>
+	<parameter name="rep_siNo11" class="java.lang.String"/>
+	<parameter name="rep_siNo12" class="java.lang.String"/>
+	<parameter name="rep_siNo13" class="java.lang.String"/>
+	<parameter name="rep_siNo14" class="java.lang.String"/>
+	<parameter name="rep_siNo15" class="java.lang.String"/>
+	<parameter name="rep_siNo16" class="java.lang.String"/>
+	<parameter name="rep_siNo17" class="java.lang.String"/>
+	<parameter name="rep_siNo18" class="java.lang.String"/>
+	<parameter name="rep_siNo19" class="java.lang.String"/>
+	<parameter name="rep_siNo20" class="java.lang.String"/>
+	<parameter name="rep_siNo21" class="java.lang.String"/>
+	<parameter name="rep_siNo22" class="java.lang.String"/>
+	<parameter name="rep_siNo23" class="java.lang.String"/>
+	<parameter name="rep_siNo24" class="java.lang.String"/>
+	<parameter name="rep_siNo25" class="java.lang.String"/>
+	<parameter name="rep_siNo26" class="java.lang.String"/>
+	<parameter name="rep_siNo27" class="java.lang.String"/>
+	<parameter name="rep_siNo28" class="java.lang.String"/>
+	<parameter name="rep_siNo29" class="java.lang.String"/>
+	<parameter name="rep_siNo30" class="java.lang.String"/>
+	<parameter name="rep_siNo31" class="java.lang.String"/>
+	<parameter name="rep_siNo32" class="java.lang.String"/>
+	<parameter name="rep_siNo33" class="java.lang.String"/>
+	<parameter name="rep_siNo34" class="java.lang.String"/>
+	<parameter name="rep_cual" class="java.lang.String"/>
+	<parameter name="rep_horaSueno" class="java.lang.String"/>
+	<parameter name="rep_cualDeporte" class="java.lang.String"/>
+	<parameter name="rep_desdeCuando" class="java.lang.String"/>
+	<parameter name="rep_alcoholBebidas" class="java.lang.String"/>
+	<parameter name="rep_consumeDroga" class="java.lang.String"/>
+	<parameter name="rep_automedica" class="java.lang.String"/>
+	<parameter name="rep_dificulAreaTrabajo" class="java.lang.String"/>
+	<parameter name="rep_tipoDificul" class="java.lang.String"/>
+	<parameter name="rep_detalle11" class="java.lang.String"/>
+	<parameter name="rep_detalle12" class="java.lang.String"/>
+	<parameter name="rep_detalle13" class="java.lang.String"/>
+	<parameter name="rep_detalle14" class="java.lang.String"/>
+	<parameter name="rep_detalle15" class="java.lang.String"/>
+	<parameter name="rep_detalle16" class="java.lang.String"/>
+	<parameter name="rep_detalle17" class="java.lang.String"/>
+	<parameter name="rep_detalle18" class="java.lang.String"/>
+	<parameter name="rep_detalle19" class="java.lang.String"/>
+	<parameter name="rep_detalle20" class="java.lang.String"/>
+	<parameter name="rep_detalle21" class="java.lang.String"/>
+	<parameter name="rep_detalle22" class="java.lang.String"/>
+	<parameter name="rep_detalle23" class="java.lang.String"/>
+	<parameter name="rep_detalle24" class="java.lang.String"/>
+	<parameter name="rep_detalle25" class="java.lang.String"/>
+	<parameter name="rep_detalle26" class="java.lang.String"/>
+	<parameter name="rep_detalle27" class="java.lang.String"/>
+	<parameter name="rep_detalle28" class="java.lang.String"/>
+	<parameter name="rep_detalle29" class="java.lang.String"/>
+	<parameter name="rep_detalle30" class="java.lang.String"/>
+	<parameter name="rep_detalle31" class="java.lang.String"/>
+	<parameter name="rep_detalle32" class="java.lang.String"/>
+	<parameter name="rep_detalle33" class="java.lang.String"/>
+	<parameter name="rep_detalle34" class="java.lang.String"/>
+	<parameter name="rep_Personas" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="rep_NombreCompleto" class="java.lang.String"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="rep_dniCuit" class="java.lang.String"/>
+	<parameter name="rep_descripcion" class="java.lang.String"/>
+	<parameter name="rep_lugar" class="java.lang.String"/>
+	<parameter name="rep_fecha" class="java.lang.String"/>
+	<parameter name="rep_horaInicio" class="java.lang.String"/>
+	<parameter name="rep_horaCierre" class="java.lang.String"/>
+	<parameter name="rep_espTecnica" class="java.lang.String"/>
+	<parameter name="rep_personaResponsable" class="java.lang.String"/>
+	<parameter name="rep_bajadaTension" class="java.lang.String"/>
+	<parameter name="rep_potencia" class="java.lang.String"/>
+	<parameter name="rep_equipos" class="java.lang.String"/>
+	<parameter name="rep_responsableTecnico" class="java.lang.String"/>
+	<parameter name="rep_domicilioLegal" class="java.lang.String"/>
+	<parameter name="rep_domicilioReal" class="java.lang.String"/>
+	<parameter name="rep_correo" class="java.lang.String"/>
+	<parameter name="rep_telefono" class="java.lang.String"/>
+	<parameter name="rep_Dni" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="rep_Sadaic" class="java.lang.String"/>
+	<parameter name="rep_Seguro" class="java.lang.String"/>
+	<group name="1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="802">
+				<image>
+					<reportElement positionType="Float" x="-58" y="0" width="163" height="59" uuid="94cafc68-2e80-4fdb-90ae-b0d366eb1708"/>
+					<imageExpression><![CDATA[$P{prutaImagen}]]></imageExpression>
+				</image>
+				<line>
+					<reportElement x="0" y="170" width="502" height="1" uuid="66a99492-6f11-4fed-8905-68d640cb9014"/>
+				</line>
+				<staticText>
+					<reportElement x="49" y="20" width="371" height="39" uuid="c7a5b65c-5237-4965-8883-d8a92e5a814d"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Autorización para realización actos festivos, musicales, culturales, deportivos
+o de indole similar en Espacios Públicos.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="80" width="210" height="39" uuid="fb103a2e-c47d-4b5a-ab0f-8f1fb0d2c3cd"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Señor Intendente
+Municipalidad de la Ciudad de Mendoza
+Dr. Ulpiano Suarez]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="-1" y="130" width="495" height="30" uuid="ce19db02-04e8-4ba6-83c1-c029023ff0f0"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[                    Por medio de la presente solicito autorización para la realización de actos festivos, musicales, culturales, deportivos o de índole similar en espacios públicos.
+.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="180" width="100" height="20" uuid="64bf1953-d747-4953-b11c-a3cbcfc6a786"/>
+					<textElement>
+						<font fontName="SansSerif" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Peticionante:]]></text>
+				</staticText>
+				<textField>
+					<reportElement positionType="Float" x="0" y="200" width="215" height="20" uuid="1b29e664-aa1b-4d8b-b868-fa408662ebae"/>
+					<textElement>
+						<font size="10" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_Personas}+
+"\nNombre completo " + $P{rep_NombreCompleto}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="220" width="95" height="20" uuid="0685da24-ed03-431d-b0e3-249d959f538b"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Nombre completo:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="250" width="100" height="19" uuid="ddb04131-c5e3-4239-b65e-7ec36f647037"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Evento:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="270" width="84" height="19" uuid="add412d9-b80e-4d0a-8189-b59c82ba0106"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Descripción : ]]></text>
+				</staticText>
+				<textField>
+					<reportElement positionType="Float" x="97" y="220" width="210" height="20" uuid="ff7a2e5b-5462-4874-93b5-7e8c8f10b8ae"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_NombreCompleto}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="310" y="221" width="59" height="19" uuid="0602c891-88e3-45bc-a0e8-cc350a529a73"/>
+					<textElement>
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_Dni} +
+"\nDNI/CUIT : " + $P{rep_dniCuit}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="370" y="220" width="134" height="19" uuid="069c1023-6bce-423a-9f4c-d29087493c62"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_dniCuit}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="310" width="54" height="20" uuid="47cdfcac-d1a8-4c8a-bc7a-cdc6855130aa"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Fecha:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="150" y="310" width="90" height="18" uuid="3186d2e7-25dc-494d-936a-eabf69667195"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Hora de inicio:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="330" y="310" width="90" height="18" uuid="73151f1c-975b-4323-97b4-31e2cb5539ee"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Hora de cierre:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="-1" y="329" width="123" height="19" uuid="8948d490-05d5-46b2-a5fb-933e9d088965"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Especificación Técnica:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="350" width="115" height="19" uuid="2309a41f-0cbf-4696-99b4-193d839b1700"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Persona Responsable:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="-1" y="370" width="155" height="19" uuid="9bfbb764-4334-46f8-b063-5517b400992d"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Requiere bajada de tensión:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="390" width="100" height="19" uuid="76942124-3f99-48ac-818f-17e29948a614"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Potencia Solicitada:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="-1" y="410" width="295" height="19" uuid="95f94b16-c05d-4361-899e-16ab73d4068f"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Especificar equipos a utilizar (iluminación, motores, etc):]]></text>
+				</staticText>
+				<textField>
+					<reportElement positionType="Float" x="84" y="270" width="420" height="19" uuid="afc2882e-810d-4091-861f-29cff8212f3c"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_descripcion}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="290" width="64" height="19" uuid="e4f39446-2665-4005-9fed-95cb9d67e979"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Lugar:]]></text>
+				</staticText>
+				<textField>
+					<reportElement positionType="Float" x="64" y="290" width="440" height="19" uuid="cc6d5e10-5a0e-4ff5-a232-249f177c606d"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_lugar}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="54" y="311" width="95" height="18" uuid="148341c7-7dfa-4b30-be61-d0ce4e6572b0"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_fecha}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="240" y="310" width="89" height="19" uuid="2656a086-dced-4e31-99d8-ed3255363b34"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_horaInicio}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="420" y="310" width="84" height="18" uuid="36566068-72e6-40db-a9b1-18f93280f388"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_horaCierre}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="122" y="330" width="383" height="20" uuid="311f570a-15a9-41a6-8073-8d64d0c6927b"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_espTecnica}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="115" y="350" width="387" height="19" uuid="8acd389f-a884-4fb4-b92c-96e8d8439f63"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_personaResponsable}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="140" y="370" width="362" height="19" uuid="a3b7356e-49bd-4263-99f6-67e2a398ba8f"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_bajadaTension}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="105" y="390" width="399" height="19" uuid="889a4a0a-c51b-4ef0-9ac4-0bfd16057cd5"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_potencia}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="240" y="410" width="275" height="18" uuid="bf1d4711-92b9-41ec-85ea-c0bb291ee396"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_equipos}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="430" width="244" height="19" uuid="d6b9a25b-3a83-49be-b838-bcf7fb5cdcf7"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Responsable Técnico: (deberá firmar la DDJJ)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="-1" y="450" width="204" height="19" uuid="d57cf3d8-1a96-419c-910d-64fa7a57b961"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Domicilio legal: (puede ser electrónico)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="-1" y="471" width="75" height="19" uuid="59d2adda-cb96-4163-9f3f-f17776d8819a"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Domicilio real:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="491" width="100" height="19" uuid="381370cc-44be-49ba-92d3-fcbd1e33d893"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Correo Electrónico:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="510" width="64" height="20" uuid="5adb96b6-9cd2-46dd-80d5-9421dccdf911"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Teléfono:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="550" width="100" height="19" uuid="955dd06b-a4df-40b2-b971-8d13bd69fb86"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Acompaña: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement positionType="Float" x="250" y="430" width="254" height="19" uuid="f7d2d499-02c9-46c0-85aa-66aceec42900"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_responsableTecnico}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="203" y="450" width="301" height="18" uuid="c888358f-a127-4b74-9da4-445a8ee79ac3"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_domicilioLegal}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="84" y="470" width="420" height="20" uuid="1dc9d3b7-9281-46a9-8262-3d6e0cc5d85a"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_domicilioReal}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="105" y="490" width="399" height="20" uuid="d4250e5f-d277-40b5-a540-f342cd5dc175"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_correo}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="70" y="510" width="434" height="20" uuid="526ed9e4-838b-4a99-bed2-916a49ec368a"/>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rep_telefono}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="-1" y="640" width="489" height="151" uuid="c899dbcc-4759-48c5-b731-0eb30f4052c9"/>
+					<text><![CDATA[- El organizador se compromete al pago de SADAIC, AADI CAPIF y/o Argentores en caso de corresponder por las características del
+mismo.
+- Se deberá respetar el Código de Convivencia (Ordenanza 3877/2014).
+- El presente pedido debe ser con quince (15) días corridos de anticipación al evento. No se cursarán pedidos que no cumplan este
+requisito.
+- En el caso de necesidad de bajada de tensión eléctrica para el evento, los gastos que se generen estarán a cargo del organizador.
+- En caso de requerirse, deberá acreditar la contratación de un seguro de responsabilidad civil o el que se solicite según el caso.]]></text>
+				</staticText>
+				<line direction="BottomUp">
+					<reportElement x="-20" y="150" width="1" height="580" uuid="12788ac6-4421-423e-b218-4b667158d505">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField>
+					<reportElement x="-50" y="304" width="14" height="54" uuid="d8f08276-9781-4ff7-9ef8-f6ea40811988"/>
+					<textElement verticalAlignment="Middle" rotation="Left">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{legajoUsr}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="-48" y="360" width="14" height="40" uuid="8a7e7a67-a3e4-4c30-a2a1-e8f01606d98e"/>
+					<textElement verticalAlignment="Middle" rotation="Left">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Legajo:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="-48" y="237" width="11" height="66" uuid="204440a6-0206-4b23-ab0e-0ac61d59a164"/>
+					<textElement verticalAlignment="Middle" rotation="Left">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{apellidoUsr}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="-50" y="173" width="13" height="64" uuid="32b87a3f-0dd1-42f1-b648-131d412ab469"/>
+					<textElement verticalAlignment="Middle" rotation="Left">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nombreUsr}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement x="340" y="0" width="163" height="20" uuid="0b92f1cc-ffb1-4bc6-8ca9-374ecf705106"/>
+				</rectangle>
+				<textField>
+					<reportElement x="366" y="0" width="111" height="20" uuid="ee03bd4d-67e8-43a3-ace9-917a4662ee90"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$P{pID}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="580" width="180" height="19" uuid="11fd09cb-5e82-4511-adf2-16bef90597ab"/>
+					<text><![CDATA[Pagado Sadaic y Aadi Capif:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="184" y="580" width="100" height="18" uuid="9c583ee9-94fc-4ef7-8ea4-04c29e7ca199"/>
+					<textFieldExpression><![CDATA[$P{rep_Sadaic}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="598" width="180" height="22" uuid="cc5df19d-5d9e-4230-9837-85385d4985ff"/>
+					<text><![CDATA[Seguro:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="184" y="599" width="100" height="20" uuid="08165e2d-2157-4745-a8f9-c24e9e363b5e"/>
+					<textFieldExpression><![CDATA[$P{rep_Seguro}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+</jasperReport>
